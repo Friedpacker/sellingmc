@@ -2615,8 +2615,8 @@ Relative Popularity_{i} = (\frac{Popularity_{i}}{max(Popularity_{i},...,Populari
 \]</span></p>
 <p>Where:</p>
 <ul>
-<li>Features ar the aspects of the observaitions described below.</li>
-<li><span class="math inline">\(Count_{feature}\)</span> is the count of all observations that are equal to this feature for <span class="math inline">\(Observation_{{i}\)</span></li>
+<li>Features are the aspects of the observations described below.</li>
+<li><span class="math inline">\(Count_{feature}\)</span> is the count of all observations that are equal to this feature for <span class="math inline">\(Observation_{i}\)</span></li>
 </ul>
 <p>Uniqueness is calculated in 3 different ways:</p>
 <ul>
@@ -2624,7 +2624,7 @@ Relative Popularity_{i} = (\frac{Popularity_{i}}{max(Popularity_{i},...,Populari
 <li>Popularity2: Features all car features of Uniqueness1, but adds the features Power (in HP),HUD, Laser,Sport, “Glasdach”, ACC, “Standheizung”,LED-Light, Leather Interior, Individual-Package, and Navigation System.</li>
 <li>Popularity3: Features all car features of Uniqueness1, but adds the feature Power (in HP).</li>
 </ul>
-<p>This was done to in order to try to calcluate “uniqueness” rather than “feature-richness”. While Uniqueness1 errs towards “uniqueness”, Uniqueness2 errs towards “feature-richness” and Uniqueness3 tries to take a middle-ground.</p>
+<p>This was done in order to try to calculate “uniqueness” rather than “feature-richness”. While Uniqueness1 errs on the side of “uniqueness”, Uniqueness2 errs on the side of “feature-richness” and Uniqueness3 tries to take a middle-ground.</p>
 <p>In order to avoid multicollinearity, several other features have been removed.</p>
 <pre><code>## fixed-effect model matrix is rank deficient so dropping 1 column / coefficient</code></pre>
 <table style="text-align:center">
